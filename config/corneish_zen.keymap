@@ -30,14 +30,14 @@
                 lower_layer {
                         label = "NUMSYM";
 // -----------------------------------------------------------------------------------------
-// |BTCLR | BT1  | BT2  | BT3  | BT4  | BT5  |      |  7&  |  8*  |  9(  |  -_  |  +=  | BKSP |
+// |BTCLR | BT1  | BT2  | BT3  | BT4  | BT5  |      |  7&  |  8*  |  9(  |  -_  |  =+  | BKSP |
 // | CTRL |      |      |      |      |      |      |  4$  |  5%  |  6^  |  [{  |  ]}  |  \|  |
 // | SHFT |      |      |      |      |      |      |  1!  |  2@  |  3#  |  (   |  )   |  `~  |
 //                      | ALT  | GUI  |      |      | ENT  |  0)  |  .,  |
                         bindings = <
 
-    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp N7 &kp N8 &kp N9 &kp MINUS &kp PLUS &kp BSPC
-    &kp LCTRL &trans &trans &trans &trans &trans        &kp N4 &kp N5 &kp N6 &kp LBRC &kp RBRC &kp BSLH
+    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp N7 &kp N8 &kp N9 &kp MINUS &kp EQUAL &kp BSPC
+    &kp LCTRL &trans &trans &trans &trans &trans        &kp N4 &kp N5 &kp N6 &kp LBKT &kp RBKT &kp BSLH
     &kp LSHFT &trans &trans &trans &trans &trans     &kp N1 &kp N2 &kp N3 &kp LPAR &kp RPAR &kp GRAVE
                        &kp LALT &kp LGUI &trans      &kp RET &kp N0 &kp DOT
                         >;

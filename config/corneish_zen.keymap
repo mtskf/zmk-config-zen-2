@@ -45,14 +45,14 @@
                 raise_layer {
                         label = "FUNC";
 // -----------------------------------------------------------------------------------------
-// |   F1   |  F2  |  F3  |  F4  |  F5  |  F6  |   |  F7  |  F8  |  F9  |  F10  |  F11  |  F12  |
-// |  BTCL  |  BT1 |  BT2 |  BT3 |  BT4 |  BT5 |   |      | LEFT |  UP  | RIGHT |       |  ENT  |
-// |  CAPS  |      |      |      |      |      |   |      | LEFT | DOWN | RIGHT |       |  SHFT |
-//                        |      |  ALT |  GUI |   |  SPC |  SPC |      |
+// |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |    |      |      |  UP  |       |      | BKSP  |
+// |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |    | CAPS | LEFT | DOWN | RIGHT |      |  ENT  |
+// | BTCL |  BT1 |  BT2 |  BT3 |  BT4 |  BT5 |    |      |      |      |       |      |  SHFT |
+//                      |      |  ALT |  GUI |    |  SPC |  SPC |      |
                         bindings = <
-   &kp F1    &kp F2 &kp F3 &kp F4 &kp F5 &kp F6     &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans &kp LEFT &kp UP &kp RIGHT &trans &kp RET
-   &mt LSHIFT CAPS  &trans &trans &trans &trans &trans     &trans &kp LEFT &kp DOWN &kp RIGHT &trans &kp RSHFT
+   &kp F1    &kp F2 &kp F3 &kp F4 &kp F5 &kp F6    &trans &trans &kp UP  &trans &trans &kp BSPC
+   &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12    &mt LSHIFT CAPS &kp LEFT &kp DOWN &kp RIGHT &trans &kp RET
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans &trans &trans &trans &trans &kp RSHFT
                        &trans &kp LALT &kp LGUI     &kp SPACE &kp SPACE &trans
                         >;
                 };

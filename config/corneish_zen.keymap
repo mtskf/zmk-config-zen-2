@@ -46,13 +46,13 @@
                         label = "NUMFUNC";
 // -----------------------------------------------------------------------------------------
 // |  `~  |  1!  |  2@  |  3#  |  4$  |  5%  |    |  6^  |  7&  |  8*  |  9(  |  0)  |  BKSP  |
-// | CTRL |      |      |      |      |      |    |      |  4   |  5   |  6   |      |  ENT   |
-// | SHFT |  BT1 |  BT2 |  BT3 |  BT4 | BTCL |    |  0   |  1   |  2   |  3   |      |  SHFT  |
+// | CTRL |      |LC-LFT| LC-UP|LC-RGT|LC-DWN|    |      | LEFT |  UP  | RGHT |      |  ENT   |
+// | SHFT |  BT1 |  BT2 |  BT3 |  BT4 | BTCL |    |      | LEFT | DOWN | RGHT |      |  SHFT  |
 //                      | CAPS |  ALT |  GUI |    |  SPC |  SPC |      |
                         bindings = <
    &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
-   &kp LCTRL &trans &trans &trans &trans &trans    &trans &kp N4 &kp N5 &kp N6 &trans &kp RET
-   &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR    &kp N0 &kp N1 &kp N2 &kp N3 &trans &kp RSHFT
+   &kp LCTRL &trans &kp LC(LEFT) &kp LC(UP) &kp LC(RIGHT) &kp LC(DOWN)    &trans &kp LEFT &kp UP &kp RIGHT &trans &kp RET
+   &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR    &trans &kp LEFT &kp DOWN &kp RIGHT &trans &kp RSHFT
                        &kp CAPS &kp LALT &kp LGUI     &kp SPACE &kp SPACE &trans
                         >;
                 };

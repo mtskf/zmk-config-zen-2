@@ -48,12 +48,12 @@
 // |     |      |      |      |      |      |   | BTCR |  BT1 |  BT2 |  BT3 |  BT4 |  BT5 |
 // |     |      |      |      |      |      |   |      |      |      |      |  UP  |      |
 // |     |      |      |      |      |      |   |      |      |      | LEFT | DOWN | RGHT |
-//                     |      |      |      |   | CAPS | MENU |      |
+//                     |      |      |      |   | KPWR | MENU |      |
                         bindings = <
    &trans &trans &trans &trans &trans &trans     &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
    &trans &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans &trans
    &trans &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans &trans
-                        &trans &trans &trans     &kp LS(CAPS) &kp LC(F2) &trans
+                        &trans &trans &trans     &kp K_PWR &kp LC(F2) &trans
                         >;
                 };
         };

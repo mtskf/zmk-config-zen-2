@@ -30,30 +30,30 @@
                 lower_layer {
                         label = "NUMSYM";
 // -----------------------------------------------------------------------------------------
-// |  `~     |  1!  |  2@  |  3#  |  4$  |  5%  |   |  6^  |  7&  |  8*  |  9(  |  0)  | BKSP |
-// |  CTRL   |      |      |      |      |      |   |  '"  |  -_  |  =+  |  [{  |  ]}  | ENT  |
-// |  SHFT   |      |      |      |      |      |   |      |      |      |      |  \|  | SHFT |
-//                         |      |  ALT |  GUI |   |  SPC |  SPC | CAPS |
+// |  `~     |  1!  |  2@  |  3#  |  4$  |  5%  |    |  6^  |  7&  |  8*  |  9(  |  0)  |     |
+// |         |      |      |      |NxtWrd|      |    |  -_  |  =+  |  UP  |  [{  |  ]}  |     |
+// |         |      |      |      |      |PrvWrd|    |  '"  | LEFT | DOWN | RGHT |  \|  |     |
+//                         |      |      |      |    |      | MENU | CAPS |
                         bindings = <
-    &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
-    &kp LCTRL &trans &trans &trans &trans &trans     &kp SQT &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp RET
-    &kp LSHFT &trans &trans &trans &trans &trans     &trans &trans &trans &trans &kp BSLH &kp RSHIFT
-                        &trans &kp LALT &kp LGUI     &kp SPACE &kp SPACE &kp CAPS
+    &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5      &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &trans
+    &trans &trans &trans &trans &kp LA(RIGHT) &trans  &kp MINUS &kp EQUAL &kp UP &kp LBKT &kp RBKT &trans
+    &trans &trans &trans &trans &trans &kp LA(LEFT)   &kp SQT &kp LEFT &kp DOWN &kp RIGHT &kp BSLH &trans
+                            &trans &trans &trans      &trans &kp LC(F2) &kp LS(CAPS)
                         >;
                 };
 
                 raise_layer {
                         label = "FUNCS";
 // -----------------------------------------------------------------------------------------
-// | BTCL |  BT1 |  BT2 |  BT3 |  BT4 |  BT5 |    |      |      |  UP  |      |      |  BKSP  |
-// | CTRL |      |      |      |NxtWrd|      |    |      | LEFT | DOWN | RGHT |      |  ENT   |
-// | SHFT |      |      |      |      |PrvWrd|    |      |      |      |      |      |  SHFT  |
-//                      | CAPS |  ALT |  GUI |    |  SPC |  SPC |      |
+// | BTCL |  BT1 |  BT2 |  BT3 |  BT4 |  BT5 |    |      |      |      |      |      |      |
+// |      |      |      |      |      |      |    |      |      |      |      |      |      |
+// |      |      |      |      |      |      |    |      |      |      |      |      |      |
+//                      |      |      |      |    |      |      |      |
                         bindings = <
     &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans &trans &kp UP &trans &trans &trans
-    &trans &trans &trans &trans &kp LA(RIGHT) &trans      &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
-    &trans &trans &trans &trans &trans &kp LA(LEFT)      &trans &trans &trans &trans &trans &trans
-                       &kp CAPS &trans &trans      &trans &trans &trans
+    &trans &trans &trans &trans &trans &trans      &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+    &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+                         &trans &trans &trans      &trans &trans &trans
                         >;
                 };
         };

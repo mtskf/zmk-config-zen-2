@@ -46,13 +46,13 @@
                         label = "FUNCS";
 // -----------------------------------------------------------------------------------------
 // | BTCL |  BT1 |  BT2 |  BT3 |  BT4 |  BT5 |    |      |      |  UP  |      |      |  BKSP  |
-// | CTRL |      |      |      |      |      |    |      | LEFT | DOWN | RGHT |      |  ENT   |
-// | SHFT |      |      |      |      |      |    |      |      |      |      |      |  SHFT  |
+// | CTRL |      |      |      |NxtWrd|      |    |      | LEFT | DOWN | RGHT |      |  ENT   |
+// | SHFT |      |      |      |      |PrvWrd|    |      |      |      |      |      |  SHFT  |
 //                      | CAPS |  ALT |  GUI |    |  SPC |  SPC |      |
                         bindings = <
     &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans &trans &kp UP &trans &trans &trans
-    &trans &trans &trans &trans &trans &trans      &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
-    &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+    &trans &trans &trans &trans &kp LA(RIGHT) &trans      &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+    &trans &trans &trans &trans &trans &kp LA(LEFT)      &trans &trans &trans &trans &trans &trans
                        &kp CAPS &trans &trans      &trans &trans &trans
                         >;
                 };

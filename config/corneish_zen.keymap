@@ -36,9 +36,9 @@
 //                         |      |      |      |    |prvSpc| Spcs |nxtSpc|      |
                         bindings = <
     &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5      &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp GRAVE
-    &trans    &trans &trans &trans &trans &trans      &kp SQT &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH
+    &trans    &trans &trans &trans &kp LC(DOWN) &trans      &kp SQT &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH
     &trans    &trans &trans &trans &trans &trans      &trans &kp LC(F2) &trans &trans &trans &trans
-                            &trans &trans &trans      &trans &trans &trans
+                            &trans &trans &trans      &kp LC(LEFT) &kp LC(UP) &kp LC(RIGHT)
                         >;
                 };
 
@@ -50,8 +50,8 @@
 // |      |      |      |      |      |      |   |      |      |      |      |      |      |
 //                      |      |      | LOCK |   | SLEEP|      |      |
                         bindings = <
-   &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR     &trans &trans &kp UP &trans &trans &trans
-   &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans  &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+    &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR     &trans &trans &kp UP &trans &trans &trans
+    &trans &trans &trans &trans &trans &trans     &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
     &trans &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans &trans
                   &trans &trans &kp LG(LC(Q))     &kp LG(LA(C_PWR)) &trans&trans
                         >;

@@ -32,13 +32,13 @@
 // -----------------------------------------------------------------------------------------
 // |  `~     |  1!  |  2@  |  3#  |  4$  |  5%  |    |  6^  |  7&  |  8*  |  9(  |  0)  | `~  |
 // |         |      |      |      |      |      |    |  '"  |  -_  |  =+  |  [{  |  ]}  | \|  |
-// |         |      |      |      |      |      |    |  UP  | MENU |      |      |      |     |
-//                         |      |      |      |    | LEFT | DOWN | RGHT |
+// |         |      |      |      |      |      |    |  UP  |      |      |      |      |     |
+//                         |      |      | MENU |    | LEFT | DOWN | RGHT |
                         bindings = <
     &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5      &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp GRAVE
-    &trans    &trans &trans &trans &trans &trans    &kp SQT &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH
-    &trans    &trans &trans &trans &trans &trans    &kp UP &kp LC(F2) &trans &trans &trans &trans
-                            &trans &trans &trans      &kp LEFT &kp DOWN &kp RIGHT
+    &trans    &trans &trans &trans &trans &trans      &kp SQT &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH
+    &trans    &trans &trans &trans &trans &trans      &kp UP &trans &trans &trans &trans &trans
+                        &trans &trans &kp LC(F2)      &kp LEFT &kp DOWN &kp RIGHT
                         >;
                 };
 
